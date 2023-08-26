@@ -1,0 +1,26 @@
+Install Tailwand.css
+
+1.install nodejs
+
+2.run npm install -D tailwindcss postcss autoprefixer
+
+3.run npx tailwindcss init
+    in this file do  
+    {
+        content: ["*"],
+    }
+4.run npx tailwindcss init -p
+
+5.create css file and add 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+6.in package.json 
+ "scripts": {
+    "start": "vite"
+  },
+
+7.<link href="/dist/main.css" rel="stylesheet"> in your html file 
+
+8.npm run start
